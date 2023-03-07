@@ -1,0 +1,25 @@
+header {
+    width: 50%;
+}
+
+.headerText {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    margin-top: 50px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    display: block;
+    cursor: pointer;
+    transition: .5s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: red;
+    }
+}
