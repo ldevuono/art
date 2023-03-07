@@ -1,9 +1,20 @@
+const artApp = {};
 
 
-fetch('https://api.artic.edu/api/v1/artworks/27992?fields=id,title,image_id')
-    .then(function (res) {
-        return res.json()
-    })
-    .then(function (jsonRes) {
-        console.log(jsonRes)
-    })
+artApp.getArt = function () {
+    fetch('https://api.artic.edu/api/v1/artworks/')
+        .then(function (res) {
+            return res.json()
+        })
+        .then(function (jsonRes) {
+            console.log(jsonRes.data)
+        })
+};
+
+
+
+artApp.init = function () {
+    artApp.getArt();
+};
+
+artApp.init();
