@@ -1,8 +1,12 @@
 const artApp = {};
 
-
+const input = "chicken";
 artApp.getArt = function () {
-    fetch('https://api.artic.edu/api/v1/artworks/')
+    const url = new URL(`https://api.artic.edu/api/v1/artworks/search?`)
+    url.search = new URLSearchParams({
+        q: input
+    })
+    fetch(url)
         .then(function (res) {
             return res.json()
         })
