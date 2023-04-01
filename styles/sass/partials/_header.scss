@@ -11,15 +11,18 @@ header {
 
 button {
     margin-top: 50px;
-    border: 2px solid black;
+    border: 2px solid red;
     padding: 10px 20px;
     display: block;
     cursor: pointer;
-    transition: .5s ease;
+    transition: .5s ease-in-out;
+    color: rgb(246, 243, 240);
+    background-color: red;
+
 
     &:hover,
     &:focus,
     &:active {
-        border-color: red;
+        border-color: rgb(246, 243, 240);
     }
 }

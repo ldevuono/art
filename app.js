@@ -1,22 +1,25 @@
 const artApp = {};
 
-const input = "chicken";
+// const input = "chicken";
 artApp.getArt = function () {
-    const url = new URL(`https://api.artic.edu/api/v1/artworks?`)
-    url.search = new URLSearchParams({
-        q: input
-    })
+    const randomize = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    const randomNum = randomize(1, 1000);
+    const url = `https://api.artic.edu/api/v1/artworks?page=${randomNum}`;
+
     fetch(url)
         .then(function (res) {
             return res.json()
         })
         .then(function (jsonRes) {
-            artApp.displayArt(jsonRes.data);
             console.log(jsonRes.data);
+            artApp.displayArt(jsonRes.data);
         })
 };
 
 artApp.displayArt = function (artArray) {
+    document.querySelector("#artwork").innerHTML = "";
     artArray.forEach(function (artPiece) {
         const title = document.createElement("h2");
         title.innerText = artPiece.title;
@@ -40,8 +43,16 @@ artApp.displayArt = function (artArray) {
 }
 
 
+artApp.getMoreArt = () => {
+    const button = document.querySelector(".getArt");
+    button.addEventListener("click", () => {
+        artApp.getArt();
+    })
+}
+
 artApp.init = function () {
     artApp.getArt();
+    artApp.getMoreArt();
 };
 
 artApp.init();

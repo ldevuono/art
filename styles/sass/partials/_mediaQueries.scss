@@ -1,0 +1,25 @@
+@media (max-width: 1000px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .headerText {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artBox {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #artwork {
+        margin-top: 50px;
+    }
+}

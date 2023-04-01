@@ -333,18 +333,59 @@ header {
 
 button {
   margin-top: 50px;
-  border: 2px solid black;
+  border: 2px solid red;
   padding: 10px 20px;
   display: block;
   cursor: pointer;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: rgb(246, 243, 240);
+  background-color: red;
 }
 button:hover, button:focus, button:active {
-  border-color: red;
+  border-color: rgb(246, 243, 240);
 }
 
 .artBox {
-  margin-top: 10px;
+  margin: 10px;
   border: 3px solid black;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.artBox:hover {
+  border: 3px solid red;
+}
+
+@media (max-width: 1000px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header {
+    width: 100%;
+    text-align: center;
+  }
+  .headerText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .artBox {
+    width: 90%;
+    margin: 10px auto;
+  }
+  #artwork {
+    margin-top: 50px;
+  }
 }
