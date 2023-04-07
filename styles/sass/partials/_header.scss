@@ -1,28 +1,39 @@
+@use './variables.scss';
+
 header {
     width: 100%;
+    background-color: variables.$red;
+    height: 190px;
+    padding: 20px 0;
 }
 
 .headerText {
-    margin: 50px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    color: variables.$background;
+}
 
+h1 {
+    border-bottom: 1px solid variables.$background;
+    padding-bottom: 20px;
 }
 
 button {
     margin-top: 30px;
-    border: 3px solid black;
-    padding: 10px 20px;
+    border: 3px solid variables.$background;
+    padding: 8px 10px;
     display: block;
     cursor: pointer;
     transition: .3s ease-in-out;
+    color: variables.$background;
 
 
 
     &:hover,
     &:focus,
     &:active {
-        border-color: red;
+        border-color: variables.$black;
     }
 }

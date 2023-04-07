@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -263,7 +263,7 @@ html {
 
 .wrapper {
   max-width: 1280px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -295,24 +295,41 @@ button {
 }
 
 body {
-  background-color: rgb(246, 243, 240);
+  background-color: rgb(240, 230, 221);
 }
 
 html {
   font-size: 125%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(60, 58, 58);
 }
 
 h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 0.9rem;
+}
+
 header {
   width: 100%;
+  background-color: rgb(220, 22, 22);
+  height: 190px;
+  padding: 20px 0;
 }
 
 .headerText {
-  margin: 50px auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,42 +337,46 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: rgb(240, 230, 221);
+}
+
+h1 {
+  border-bottom: 1px solid rgb(240, 230, 221);
+  padding-bottom: 20px;
 }
 
 button {
   margin-top: 30px;
-  border: 3px solid black;
-  padding: 10px 20px;
+  border: 3px solid rgb(240, 230, 221);
+  padding: 8px 10px;
   display: block;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  color: rgb(240, 230, 221);
 }
 button:hover, button:focus, button:active {
-  border-color: red;
+  border-color: rgb(60, 58, 58);
 }
 
 .artBox {
   margin: 60px auto;
   padding: 10px;
-  width: calc(33.3333333333% - 20px);
+  width: calc(33.3333333333% - 10px);
   text-align: center;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .framedImage {
   margin-top: 30px;
-  border: 10px solid black;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-.framedImage:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  border: 3px solid rgb(111, 107, 107);
+  padding: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #artwork {

@@ -1,11 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Tilt+Prism&display=swap');
+@use './variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
     font-size: 125%;
-    font-family: 'Source Sans Pro',
-        sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: variables.$black;
 }
 
 h1 {
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+button {
+    font-size: .9rem;
 }

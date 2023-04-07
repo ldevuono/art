@@ -1,6 +1,8 @@
+@use './variables.scss';
+
 .wrapper {
     max-width: 1280px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -33,7 +35,5 @@ button {
 }
 
 body {
-    // display: flex;
-    // justify-content: space-between;
-    background-color: rgb(246, 243, 240);
+    background-color: variables.$background;
 }
