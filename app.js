@@ -30,6 +30,7 @@ artApp.displayArt = function (artArray) {
         const image = document.createElement("img");
         image.src = `https://www.artic.edu/iiif/2/${artPiece.image_id}/full/843,/0/default.jpg`;
         image.alt = artPiece.title;
+        image.classList.add('framedImage');
 
         const artBox = document.createElement("div");
         artBox.classList.add('artBox');
