@@ -1,0 +1,51 @@
+@use './variables.scss';
+// modal
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .3s ease;
+
+    a {
+        text-decoration: underline 1px variables.$black;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: variables.$red;
+            text-decoration: underline 1px variables.$red;
+        }
+    }
+
+    span {
+        font-style: italic;
+    }
+}
+
+.modalContent {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid variables.$grey;
+    width: 80%;
+    background-color: variables.$background;
+    transition: .3s ease;
+
+    button {
+        color: variables.$black;
+        border: none;
+        position: relative;
+        top: -30px;
+        left: 0;
+
+        &:hover {
+            color: variables.$red;
+        }
+    }
+}

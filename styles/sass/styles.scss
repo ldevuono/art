@@ -4,4 +4,7 @@
 @use './partials/variables';
 @use './partials/_header';
 @use './partials/_main';
+@use './partials/_footer';
+@use './partials/loader';
+@use './partials/modal';
 @use './partials/_mediaQueries';

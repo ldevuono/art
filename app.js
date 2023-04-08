@@ -2,6 +2,8 @@ const artApp = {};
 
 // const input = "chicken";
 artApp.getArt = function () {
+    let loader = document.querySelector(".loading");
+    loader.style.display = "block";
     const randomize = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
@@ -15,6 +17,7 @@ artApp.getArt = function () {
         .then(function (jsonRes) {
             console.log(jsonRes.data);
             artApp.displayArt(jsonRes.data);
+            loader.style.display = "none";
         })
 };
 
@@ -50,6 +53,21 @@ artApp.getMoreArt = () => {
         artApp.getArt();
     })
 }
+
+//modal
+const modal = document.querySelector(".modal");
+const openModal = document.querySelector(".aboutButton");
+const closeModal = document.querySelector(".closeModal");
+
+const showAbout = () => {
+    modal.style.display = "block";
+}
+const closeAbout = () => {
+    modal.style.display = "none";
+}
+
+openModal.addEventListener("click", showAbout);
+closeModal.addEventListener("click", closeAbout);
 
 artApp.init = function () {
     artApp.getArt();

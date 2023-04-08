@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Exhibition</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" type="image/ico" href="./assets/favicon.ico">
+    <link rel="icon" type="image/ico" href="./assets/FE.ico">
+    <script src="https://kit.fontawesome.com/5d77984097.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,15 +18,36 @@
             <button class="getArt">
                 Refresh Exhibition
             </button>
+            <button class="aboutButton"><i class="fa-solid fa-info fa-xs"></i></button>
         </div>
-
     </header>
     <main class="wrapper">
+        <div class="loading">
+
+        </div>
         <div id="artwork">
 
         </div>
+
+        <div class="modal">
+            <div class="modalContent">
+                <button class="closeModal"><i class="fa-solid fa-x"></i></button>
+                <p><span>Fantasy Exhibition</span> uses the Art Institute of
+                    Chicago's <a href="https://www.artic.edu/open-access/public-api">public API</a> to create a
+                    randomized gallery exhibition comprised of pieces from their permanent collection. </p>
+                <p>Each collection
+                    of artworks
+                    is unique—refresh
+                    the exhibition and it's gone forever; an exercise in ephemera.</p>
+                <p>Can you find a theme for your personal fantasy exhibition? What unites the
+                    pieces, if anything? </p>
+            </div>
+        </div>
     </main>
 
+    <footer>
+        <p class="wrapper">Copyright © 2023</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 
