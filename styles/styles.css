@@ -288,6 +288,7 @@ img {
 a {
   -webkit-text-decoration: underline 1px rgb(60, 58, 58);
           text-decoration: underline 1px rgb(60, 58, 58);
+  color: inherit;
 }
 a:hover, a:focus, a:active {
   color: rgb(220, 22, 22);
