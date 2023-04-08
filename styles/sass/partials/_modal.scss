@@ -13,17 +13,6 @@
     background-color: rgba(0, 0, 0, 0.4);
     transition: .3s ease;
 
-    a {
-        text-decoration: underline 1px variables.$black;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: variables.$red;
-            text-decoration: underline 1px variables.$red;
-        }
-    }
-
     span {
         font-style: italic;
     }

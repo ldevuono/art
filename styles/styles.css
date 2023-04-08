@@ -286,8 +286,13 @@ img {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  -webkit-text-decoration: underline 1px rgb(60, 58, 58);
+          text-decoration: underline 1px rgb(60, 58, 58);
+}
+a:hover, a:focus, a:active {
+  color: rgb(220, 22, 22);
+  -webkit-text-decoration: underline 1px rgb(220, 22, 22);
+          text-decoration: underline 1px rgb(220, 22, 22);
 }
 
 button {
@@ -458,15 +463,6 @@ footer p {
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-}
-.modal a {
-  -webkit-text-decoration: underline 1px rgb(60, 58, 58);
-          text-decoration: underline 1px rgb(60, 58, 58);
-}
-.modal a:hover, .modal a:focus, .modal a:active {
-  color: rgb(220, 22, 22);
-  -webkit-text-decoration: underline 1px rgb(220, 22, 22);
-          text-decoration: underline 1px rgb(220, 22, 22);
 }
 .modal span {
   font-style: italic;

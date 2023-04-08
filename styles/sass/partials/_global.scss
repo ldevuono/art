@@ -26,8 +26,14 @@ img {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: underline 1px variables.$black;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: variables.$red;
+        text-decoration: underline 1px variables.$red;
+    }
 }
 
 button {
