@@ -1,6 +1,6 @@
 const artApp = {};
 
-// const input = "chicken";
+// get art
 artApp.getArt = function () {
     let loader = document.querySelector(".loading");
     loader.style.display = "block";
@@ -15,12 +15,12 @@ artApp.getArt = function () {
             return res.json()
         })
         .then(function (jsonRes) {
-            console.log(jsonRes.data);
             artApp.displayArt(jsonRes.data);
             loader.style.display = "none";
         })
 };
 
+// display art
 artApp.displayArt = function (artArray) {
     document.querySelector("#artwork").innerHTML = "";
     artArray.forEach(function (artPiece) {
@@ -46,7 +46,7 @@ artApp.displayArt = function (artArray) {
     })
 }
 
-
+// refresh gallery
 artApp.getMoreArt = () => {
     const button = document.querySelector(".getArt");
     button.addEventListener("click", () => {
@@ -54,7 +54,7 @@ artApp.getMoreArt = () => {
     })
 }
 
-//modal
+// modal
 const modal = document.querySelector(".modal");
 const openModal = document.querySelector(".aboutButton");
 const closeModal = document.querySelector(".closeModal");
@@ -69,6 +69,11 @@ const closeAbout = () => {
 openModal.addEventListener("click", showAbout);
 closeModal.addEventListener("click", closeAbout);
 
+// lightbox
+
+
+
+// init
 artApp.init = function () {
     artApp.getArt();
     artApp.getMoreArt();
