@@ -286,14 +286,14 @@ img {
 }
 
 a {
-  -webkit-text-decoration: underline 1px rgb(60, 58, 58);
-          text-decoration: underline 1px rgb(60, 58, 58);
+  -webkit-text-decoration: underline 1px #231F20;
+          text-decoration: underline 1px #231F20;
   color: inherit;
 }
 a:hover, a:focus, a:active {
-  color: rgb(220, 22, 22);
-  -webkit-text-decoration: underline 1px rgb(220, 22, 22);
-          text-decoration: underline 1px rgb(220, 22, 22);
+  color: rgb(206, 51, 51);
+  -webkit-text-decoration: underline 1px rgb(206, 51, 51);
+          text-decoration: underline 1px rgb(206, 51, 51);
 }
 
 button {
@@ -307,7 +307,7 @@ body {
 html {
   font-size: 125%;
   font-family: "Montserrat", sans-serif;
-  color: rgb(60, 58, 58);
+  color: #231F20;
 }
 
 h1 {
@@ -329,9 +329,9 @@ button {
 
 header {
   width: 100%;
-  background-color: rgb(220, 22, 22);
-  height: 190px;
-  padding: 20px 0;
+  background-color: rgb(206, 51, 51);
+  height: 200px;
+  padding: 30px 0;
 }
 
 .aboutButton {
@@ -373,7 +373,7 @@ button {
   color: rgb(240, 230, 221);
 }
 button:hover, button:focus, button:active {
-  border-color: rgb(60, 58, 58);
+  border-color: #231F20;
 }
 
 .artBox {
@@ -387,7 +387,7 @@ button:hover, button:focus, button:active {
 
 .framedImage {
   margin-top: 30px;
-  border: 3px solid rgb(111, 107, 107);
+  border: 3px solid #080705;
   padding: 10px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -407,7 +407,7 @@ footer {
   padding-top: 10px;
 }
 footer p {
-  border-top: 1px solid rgb(220, 22, 22);
+  border-top: 1px solid rgb(206, 51, 51);
   padding: 15px;
 }
 
@@ -425,8 +425,8 @@ footer p {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid rgb(220, 22, 22);
-  border-color: rgb(220, 22, 22) transparent rgb(220, 22, 22) transparent;
+  border: 6px solid rgb(206, 51, 51);
+  border-color: rgb(206, 51, 51) transparent rgb(206, 51, 51) transparent;
   -webkit-animation: loading 2s linear infinite;
           animation: loading 2s linear infinite;
 }
@@ -472,21 +472,21 @@ footer p {
 .modalContent {
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid rgb(111, 107, 107);
+  border: 1px solid #080705;
   width: 80%;
   background-color: rgb(240, 230, 221);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .modalContent button {
-  color: rgb(60, 58, 58);
+  color: #231F20;
   border: none;
   position: relative;
   top: -30px;
   left: 0;
 }
 .modalContent button:hover {
-  color: rgb(220, 22, 22);
+  color: rgb(206, 51, 51);
 }
 
 @media (max-width: 1000px) {
