@@ -387,8 +387,8 @@ button:hover, button:focus, button:active {
 
 .framedImage {
   margin-top: 30px;
-  border: 3px solid #080705;
-  padding: 10px;
+  border: 1px solid #dfdcd6;
+  padding: 15px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -472,7 +472,7 @@ footer p {
 .modalContent {
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #080705;
+  border: 1px solid #dfdcd6;
   width: 80%;
   background-color: rgb(240, 230, 221);
   -webkit-transition: 0.3s ease;
