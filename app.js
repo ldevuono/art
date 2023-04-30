@@ -15,6 +15,7 @@ artApp.getArt = function () {
             return res.json()
         })
         .then(function (jsonRes) {
+            console.log(jsonRes.data);
             artApp.displayArt(jsonRes.data);
             loader.style.display = "none";
         })
@@ -24,25 +25,27 @@ artApp.getArt = function () {
 artApp.displayArt = function (artArray) {
     document.querySelector("#artwork").innerHTML = "";
     artArray.forEach(function (artPiece) {
-        const title = document.createElement("h2");
-        title.innerText = artPiece.title;
+        if (artPiece.image_id) {
+            const title = document.createElement("h2");
+            title.innerText = artPiece.title;
 
-        const artist = document.createElement("h3");
-        artist.innerText = artPiece.artist_title;
+            const artist = document.createElement("h3");
+            artist.innerText = artPiece.artist_title;
 
-        const image = document.createElement("img");
-        image.src = `https://www.artic.edu/iiif/2/${artPiece.image_id}/full/843,/0/default.jpg`;
-        image.alt = artPiece.title;
-        image.classList.add('framedImage');
+            const image = document.createElement("img");
+            image.src = `https://www.artic.edu/iiif/2/${artPiece.image_id}/full/843,/0/default.jpg`;
+            image.alt = artPiece.title;
+            image.classList.add('framedImage');
 
-        const artBox = document.createElement("div");
-        artBox.classList.add('artBox');
+            const artBox = document.createElement("div");
+            artBox.classList.add('artBox');
 
-        artBox.appendChild(title);
-        artBox.appendChild(artist);
-        artBox.appendChild(image);
+            artBox.appendChild(title);
+            artBox.appendChild(artist);
+            artBox.appendChild(image);
 
-        document.querySelector("#artwork").appendChild(artBox)
+            document.querySelector("#artwork").appendChild(artBox)
+        }
     })
 }
 
