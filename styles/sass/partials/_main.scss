@@ -1,7 +1,7 @@
 @use './variables';
 
 .artBox {
-    margin: 60px auto;
+    margin: 30px auto;
     padding: 10px;
     width: calc((100% / 3) - 10px);
     text-align: center;
@@ -19,4 +19,8 @@
 #artwork {
     display: flex;
     flex-wrap: wrap;
+}
+
+h2 {
+    margin-top:10px;
 }

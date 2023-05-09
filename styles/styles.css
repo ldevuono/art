@@ -286,8 +286,8 @@ img {
 }
 
 a {
-  -webkit-text-decoration: underline 1px #231F20;
-          text-decoration: underline 1px #231F20;
+  -webkit-text-decoration: underline 1px #333333;
+          text-decoration: underline 1px #333333;
   color: inherit;
 }
 a:hover, a:focus, a:active {
@@ -307,7 +307,7 @@ body {
 html {
   font-size: 125%;
   font-family: "Montserrat", sans-serif;
-  color: #231F20;
+  color: #333333;
 }
 
 h1 {
@@ -315,12 +315,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 button {
@@ -373,11 +373,11 @@ button {
   color: rgb(240, 230, 221);
 }
 button:hover, button:focus, button:active {
-  border-color: #231F20;
+  border-color: #333333;
 }
 
 .artBox {
-  margin: 60px auto;
+  margin: 30px auto;
   padding: 10px;
   width: calc(33.3333333333% - 10px);
   text-align: center;
@@ -399,6 +399,10 @@ button:hover, button:focus, button:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+h2 {
+  margin-top: 10px;
 }
 
 footer {
@@ -479,7 +483,7 @@ footer p {
   transition: 0.3s ease;
 }
 .modalContent button {
-  color: #231F20;
+  color: #333333;
   border: none;
   position: relative;
   top: -30px;

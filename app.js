@@ -40,9 +40,9 @@ artApp.displayArt = function (artArray) {
             const artBox = document.createElement("div");
             artBox.classList.add('artBox');
 
+            artBox.appendChild(image);
             artBox.appendChild(title);
             artBox.appendChild(artist);
-            artBox.appendChild(image);
 
             document.querySelector("#artwork").appendChild(artBox)
         }
