@@ -15,7 +15,6 @@ artApp.getArt = function () {
             return res.json()
         })
         .then(function (jsonRes) {
-            console.log(jsonRes.data);
             artApp.displayArt(jsonRes.data);
             loader.style.display = "none";
         })

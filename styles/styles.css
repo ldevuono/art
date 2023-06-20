@@ -291,9 +291,9 @@ a {
   color: inherit;
 }
 a:hover, a:focus, a:active {
-  color: rgb(206, 51, 51);
-  -webkit-text-decoration: underline 1px rgb(206, 51, 51);
-          text-decoration: underline 1px rgb(206, 51, 51);
+  color: rgb(177, 43, 43);
+  -webkit-text-decoration: underline 1px rgb(177, 43, 43);
+          text-decoration: underline 1px rgb(177, 43, 43);
 }
 
 button {
@@ -301,7 +301,7 @@ button {
 }
 
 body {
-  background-color: rgb(240, 230, 221);
+  background-color: rgb(237, 234, 230);
 }
 
 html {
@@ -324,7 +324,7 @@ h2 {
 
 header {
   width: 100%;
-  background-color: rgb(206, 51, 51);
+  background-color: rgb(177, 43, 43);
   height: 200px;
   padding: 30px 0;
 }
@@ -349,23 +349,23 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: rgb(240, 230, 221);
+  color: rgb(237, 234, 230);
 }
 
 h1 {
-  border-bottom: 1px solid rgb(240, 230, 221);
+  border-bottom: 1px solid rgb(237, 234, 230);
   padding-bottom: 20px;
 }
 
 button {
   margin-top: 30px;
-  border: 3px solid rgb(240, 230, 221);
+  border: 3px solid rgb(237, 234, 230);
   padding: 8px 10px;
   display: block;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  color: rgb(240, 230, 221);
+  color: rgb(237, 234, 230);
 }
 button:hover, button:focus, button:active {
   border-color: #333333;
@@ -383,7 +383,6 @@ button:hover, button:focus, button:active {
 .framedImage {
   margin-top: 30px;
   border: 1px solid #dfdcd6;
-  padding: 15px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -406,7 +405,7 @@ footer {
   padding-top: 10px;
 }
 footer p {
-  border-top: 1px solid rgb(206, 51, 51);
+  border-top: 1px solid rgb(177, 43, 43);
   padding: 15px;
 }
 
@@ -424,8 +423,8 @@ footer p {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid rgb(206, 51, 51);
-  border-color: rgb(206, 51, 51) transparent rgb(206, 51, 51) transparent;
+  border: 6px solid rgb(177, 43, 43);
+  border-color: rgb(177, 43, 43) transparent rgb(177, 43, 43) transparent;
   -webkit-animation: loading 2s linear infinite;
           animation: loading 2s linear infinite;
 }
@@ -473,7 +472,7 @@ footer p {
   padding: 20px;
   border: 1px solid #dfdcd6;
   width: 80%;
-  background-color: rgb(240, 230, 221);
+  background-color: rgb(237, 234, 230);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -485,7 +484,7 @@ footer p {
   left: 0;
 }
 .modalContent button:hover {
-  color: rgb(206, 51, 51);
+  color: rgb(177, 43, 43);
 }
 
 @media (max-width: 1000px) {
