@@ -20,9 +20,9 @@
 
 .modalContent {
     margin: 15% auto;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid variables.$grey;
-    width: 80%;
+    width: 60%;
     background-color: variables.$background;
     transition: .3s ease;
 
@@ -36,5 +36,11 @@
         &:hover {
             color: variables.$red;
         }
+    }
+}
+
+@media (max-width:600px) {
+    .modalContent {
+        width: 80%;
     }
 }

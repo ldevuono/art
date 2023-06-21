@@ -301,7 +301,7 @@ button {
 }
 
 body {
-  background-color: rgb(237, 234, 230);
+  background-color: #fffaeb;
 }
 
 html {
@@ -349,23 +349,23 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: rgb(237, 234, 230);
+  color: #fffaeb;
 }
 
 h1 {
-  border-bottom: 1px solid rgb(237, 234, 230);
+  border-bottom: 1px solid #fffaeb;
   padding-bottom: 20px;
 }
 
 button {
   margin-top: 30px;
-  border: 3px solid rgb(237, 234, 230);
+  border: 3px solid #fffaeb;
   padding: 8px 10px;
   display: block;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  color: rgb(237, 234, 230);
+  color: #fffaeb;
 }
 button:hover, button:focus, button:active {
   border-color: #333333;
@@ -469,10 +469,10 @@ footer p {
 
 .modalContent {
   margin: 15% auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #dfdcd6;
-  width: 80%;
-  background-color: rgb(237, 234, 230);
+  width: 60%;
+  background-color: #fffaeb;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -487,6 +487,11 @@ footer p {
   color: rgb(177, 43, 43);
 }
 
+@media (max-width: 600px) {
+  .modalContent {
+    width: 80%;
+  }
+}
 @media (max-width: 1000px) {
   body {
     -webkit-box-orient: vertical;
